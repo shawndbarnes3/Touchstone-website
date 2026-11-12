@@ -1,26 +1,26 @@
-TWIN CITIES ANIMAL RESCUE — TOUCHSTONE 3
-=========================================
-This student project builds on Touchstone 2 with external CSS, mobile-first
-responsive layout, Flexbox, and media queries.
+TWIN CITIES ANIMAL RESCUE — INTRO TO WEB DEVELOPMENT TOUCHSTONE 4
 
-Files
-- index.html (Home)
-- services.html (Adoption, Foster Care, and Volunteering)
-- about.html (Story, Values, Community Partners, Video)
-- contact.html (Contact and Interest Form)
-- styles.css (shared CSS for all four pages)
-- assets/ (provided rescue photographs, video, and logo)
+Files:
+  index.html, services.html, about.html, contact.html
+  styles.css (Touchstone 3 responsive design)
+  script.js (Touchstone 4 interactions, form validation, and browser storage)
+  assets/ (provided animal rescue image/video files)
 
-How to preview
-1. Upload all files and the assets folder to one GitHub repository.
-2. In GitHub Codespaces, open index.html with your local preview tool.
-3. Or open index.html directly in a web browser for a static preview.
-4. To publish a shareable URL, enable GitHub Pages for the repository.
-   GitHub repository and GitHub Pages links must be added by the student.
+How to use in GitHub Codespaces:
+1. Open the existing public repository from Touchstone 3 or create a new public repository.
+2. Upload or replace the HTML pages, styles.css, script.js, and assets folder.
+3. Commit and push the changes.
+4. Enable GitHub Pages from repository settings (main branch, root folder).
+5. Test the published services.html role finder and contact.html form.
+6. Copy your real repository and GitHub Pages URLs into Section 1 of the template.
 
-Important notes
-- Colors: cream #FFF8F0, brown #6B3E26, peach #D88C5A, charcoal #2F2A26.
-- Fonts: Georgia for headings and Arial for body text.
-- The form uses built-in HTML checks, but has no working submission backend.
-- Any impact figures and business hours are clearly marked as sample details.
-- Image assets in the provided ZIP use .png filenames; paths match actual assets.
+The role finder on services.html matches sample volunteer roles to a schedule.
+Click 'Save this role' to store ONLY the role ID and preferred availability in localStorage.
+On later visits, the selection is restored and shown on services.html and contact.html.
+
+The contact form checks names, email, ZIP code, role interest, availability,
+experience, and short message. Errors appear near the fields. A valid form
+shows a demonstration message. No contact details are stored or submitted.
+
+This is a student demonstration, not a real rescue website. Volunteer
+schedules, impact statistics, and office hours are illustrative.

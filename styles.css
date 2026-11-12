@@ -174,3 +174,34 @@ button[type="submit"]:hover { background: var(--peach); color: var(--charcoal); 
   .hero-media picture img { aspect-ratio: 5 / 4; }
   .form-card { padding: 2rem; }
 }
+
+/* Touchstone 4: Interactive volunteer role matching and field validation.
+   The color palette and font choices remain the same as Touchstone 3. */
+.match-section { border-top: 4px solid var(--peach); padding-top: 2rem; }
+.match-controls { display: flex; flex-direction: column; gap: .8rem; align-items: stretch; }
+.match-controls .form-field { margin: 0; }
+.action-button { cursor: pointer; font: bold 1rem Arial, sans-serif; }
+.match-feedback { margin: 1rem 0; font-weight: bold; }
+.match-results { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+.match-card { border: 2px solid var(--peach); border-radius: .8rem; padding: 1.15rem; background: var(--cream); flex: 1; }
+.match-card h3 { margin-bottom: .45rem; }
+.match-card p { margin: 0 0 .8rem; }
+.match-card .role-times { font-weight: bold; }
+.match-card button { background: var(--brown); color: var(--cream); padding: .65rem 1rem; border: 2px solid var(--brown); border-radius: .5rem; cursor: pointer; font: bold .94rem Arial, sans-serif; }
+.match-card button:hover { background: var(--peach); color: var(--charcoal); }
+.match-card.is-saved { border: 3px solid var(--brown); }
+.saved-role-box, .saved-form-choice { border-left: .5rem solid var(--peach); background: var(--cream); padding: .95rem 1.15rem; margin: 1rem 0; }
+.saved-role-box h3 { margin-bottom: .35rem; }
+.saved-role-box p, .saved-form-choice p { margin-bottom: .3rem; }
+.field-error { display: block; min-height: 0; margin-top: .3rem; font-size: .88rem; font-weight: bold; color: #7A271A; }
+.field-error:not(:empty) { padding: .2rem .4rem; border-left: 3px solid #7A271A; }
+input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="true"] { border: 3px solid #7A271A; }
+#form-status:not(:empty) { margin-top: 1rem; padding: .85rem; border: 2px solid var(--brown); border-radius: .5rem; font-weight: bold; }
+#form-status.is-error { border-color: #7A271A; }
+[hidden] { display: none !important; }
+@media (min-width: 760px) {
+  .match-controls { flex-direction: row; align-items: flex-end; }
+  .match-controls .form-field { flex: 1; }
+  .match-results { flex-direction: row; flex-wrap: wrap; }
+  .match-results > * { flex: 1 1 220px; }
+}

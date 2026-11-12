@@ -6,6 +6,7 @@
   <meta name="description" content="Learn how to support animal adoption, foster care, and volunteer work with Twin Cities Animal Rescue.">
   <title>Adoption and Services | Twin Cities Animal Rescue</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -58,6 +59,32 @@
         <article class="card"><h3>Supply Helper</h3><p>Sort donated items, prepare care kits, and help keep supplies organized.</p></article>
       </div>
       <p class="section-intro">Interested in a role? <a href="contact.html">Tell us what you want to do and when you are available.</a></p>
+    </section>
+    <section class="section match-section" id="find-a-role" aria-labelledby="match-heading">
+      <p class="eyebrow">Find your place</p>
+      <h2 id="match-heading">Find a Volunteer Role That Fits</h2>
+      <p class="section-intro">Choose when you are free to see volunteer roles that could work for you. You can save one role and return to it later.</p>
+      <div class="match-controls">
+        <div class="form-field">
+          <label for="role-availability">When are you usually available?</label>
+          <select id="role-availability" name="role-availability">
+            <option value="">Choose your availability</option>
+            <option value="weekdays">Weekdays</option>
+            <option value="evenings">Evenings</option>
+            <option value="weekends">Weekends</option>
+            <option value="flexible">Flexible schedule</option>
+          </select>
+        </div>
+        <button type="button" class="button action-button" id="show-roles">Find Matching Roles</button>
+      </div>
+      <p id="match-feedback" class="match-feedback" role="status" aria-live="polite">Select your availability to see a few ways to help.</p>
+      <div id="role-results" class="match-results" aria-label="Volunteer role matches"></div>
+      <div class="saved-role-box" aria-live="polite" aria-atomic="true">
+        <h3>Your Saved Interest</h3>
+        <p id="saved-role-summary">You have not saved a volunteer role yet.</p>
+        <a class="text-link" id="saved-role-contact" href="contact.html" hidden>Continue to the interest form</a>
+      </div>
+      <p class="note"><strong>Class project:</strong> These are sample role descriptions, not real openings or schedules.</p>
     </section>
   </main>
   <footer class="site-footer">
