@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to support animal adoption, foster care, and volunteer work with Twin Cities Animal Rescue.">
+  <title>Get Involved | Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Twin Cities Animal Rescue home">
+        <img src="assets/rescue-logo.png" alt="" width="76" height="70">
+        <span><span class="brand-name">Twin Cities Animal Rescue</span>
+          <span class="brand-tag">Care. Community. Second chances.</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Adoption & Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" aria-current="page">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="page-wrap">
+<p class="eyebrow">Take the next step</p>
+    <h1>Contact Us to Get Involved</h1>
+    <p class="lead">Interested in volunteering, fostering, or adoption? Tell us a little about yourself.</p>
+    <div class="contact-layout section">
+      <aside class="callout" aria-labelledby="area-heading">
+        <h2 id="area-heading">Service Area</h2>
+        <p>We focus on Minneapolis, Saint Paul, and nearby Twin Cities communities in Minnesota.</p>
+        <h3>Office Hours</h3>
+        <p>Monday through Friday, 10:00 a.m. to 4:00 p.m.</p>
+        <p class="note"><strong>Class project note:</strong> These are sample hours. Confirm actual hours before visiting.</p>
+      </aside>
+      <section class="form-card" aria-labelledby="form-heading">
+        <h2 id="form-heading">Volunteer or Foster Interest Form</h2>
+        <p>Fields marked with an asterisk (*) are required.</p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Your Contact Information</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="full-name">Full name *</label>
+                <input type="text" id="full-name" name="full_name" autocomplete="name" minlength="2" maxlength="80" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="zip">ZIP code (optional)</label>
+              <input type="text" id="zip" name="zip" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" title="Enter a five-digit ZIP code">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>How You Want to Help</legend>
+            <span class="field-label">Interest type *</span>
+            <div class="radio-stack">
+              <label><input type="radio" name="interest" value="volunteer" required> Volunteer</label>
+              <label><input type="radio" name="interest" value="foster"> Foster</label>
+              <label><input type="radio" name="interest" value="adoption"> Adoption information</label>
+            </div>
+            <div class="form-field">
+              <label for="availability">Your availability *</label>
+              <select id="availability" name="availability" required>
+                <option value="">Choose one</option>
+                <option value="weekdays">Weekdays</option>
+                <option value="evenings">Evenings</option>
+                <option value="weekends">Weekends</option>
+                <option value="flexible">Flexible schedule</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="experience">Experience with pets *</label>
+              <textarea id="experience" name="experience" rows="4" minlength="10" maxlength="500" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="message">Short message *</label>
+              <textarea id="message" name="message" rows="4" minlength="10" maxlength="600" required></textarea>
+            </div>
+          </fieldset>
+          <button type="submit">Send Interest Form</button>
+        </form>
+        <p class="note"><strong>Class project:</strong> This form is a visual demonstration and does not send information to a real rescue.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p><strong>Twin Cities Animal Rescue</strong> | Twin Cities, Minnesota</p>
+      <p class="note">Student website project. Statistics and office hours shown here are examples, not verified organization details.</p>
+    </div>
+  </footer>
+</body>
+</html>
